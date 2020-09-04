@@ -8,32 +8,62 @@
 <style>
     body{
         background: hsl(0, 0%, 90%);
+        font-family: monospace;
+    
     }
-    h1{ color: hsl(13, 80%, 52%)}
-    h2, h3{
-        color: hsl(13, 90%, 62%);
+    h1{ color: hsl(13, 80%, 52%) !important;
+    font-size:40px;}
+    h2, h3{ 
+        color: hsl(13, 90%, 62%) !important;
     }
+    h2{
+        font-size: 30px;
+    }
+    h3{font-size: 22px;}
     a{
-        text-transform: none;
-        color: hsl(23, 85%, 60%);
+        text-decoration: none;
+        color: hsl(23, 85%, 60%) !important;
     }
+    
+    .grey{
+        color: hsl(242, 7%, 38%);
+    }
+
+    #tribute-info{
+        margin: 1em;
+        font-size:18px;
+        margin: 0 10% 0 10%;
+        
+    }
+
+    .flex{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    p, ul:{ 
+        max-width: 700px;
+    }
+    figcaption{margin: 20px 0 0 0;
+    font-size: 14px;}
+    img{border-radius: 50%;}
 </style>
 <body>
     <main id="main">
-        <h1 id="title">Sappho</h1>
-        <h2 id="subtitle">Poet, icon, lover</h2>
-        <div id="img-div">
+        <h1 class="flex" id="title">Sappho</h1>
+        <h2 class="flex" id="subtitle">Poet, icon, lover</h2>
+        <div class="flex" id="img-div">
             <img src="https://www.thefamouspeople.com/profiles/thumbs/sappho-2.jpg" alt="Sappho">
-            <figcaption id="img-caption">One of Sappho's most famous raffigurations</figcaption>
+            <figcaption class="grey" id="img-caption">One of Sappho's most famous raffigurations</figcaption>
         </div>
-        <div id="tribute-info">
+        <div class="flex grey" id="tribute-info">
             <h3>Things you may not know about her:</h3>
             <p>She was a pretty interesting character. Many know her as an early Greek poet, but there is much else to her: </p>
             <ul id="fun-facts">
                 <li> She was called "The tenth muse" and "The poetess" in ancient times.
                 </li>
                 <li>Most of her poetry did not actually survive to our times.</li>
-                <li>Not much is known abouther life - but we do know she was exiled to Sicily.</li>
+                <li>Not much is known about her life - but we do know she was exiled to Sicily.</li>
                 <li>She is the origin of the words "sapphic" and "lesbian".</li>
             </ul>
             <p>To know more about her, feel free to check out <a href="https://en.wikipedia.org/wiki/Sappho" target="_blank">Sappho's Wikipedia page</a>.</p>
