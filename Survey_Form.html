@@ -12,8 +12,11 @@
             <p id="description">There are plenty of stereotypes about personal presentation and sexual orientation. My question is - is there a kernel of truth to that? Are non-cishet people more likely to present in non-traditional manners?</p>
         </div>
         <form id="survey form" action="">
+            <div id="demo-info">
             <input type="text" name="name" id="name" placeholder="Name" required> 
             <input type="email"name="email" id="email" placeholder="Email" pattern="+@+" required>
+            </div>
+            <div id="gender-dropdown">
             <label id="gender-label"for="gender">What's your gender?</label>
             <!-- make this a dropdown you fool -->
             <select name="gender" id="gender">
@@ -22,8 +25,9 @@
                 <option value="Bi-Pan">Non Binary</option>
                 <option value="Other">Other</option>
               </select>
-
-            <label id="gener-label" for="sexuality">What's your sexual orientation?</label>
+            </div>
+            <div id="sexuality-dropdown">
+            <label id="sexuality-label" for="sexuality">What's your sexual orientation?</label>
 
             <select name="sexuality" id="sexuality">
                 <option value="Gay">Gay</option>
@@ -31,13 +35,22 @@
                 <option value="Bi-Pan">Bi/Pan</option>
                 <option value="Other">Other</option>
               </select>
-            
+            </div>
             <!-- dropdowns end here -->
+            <div id="hair-length">
             <label id="number-label" for="number">How long is your hair in centimeters?</label>
             <input type="number" name="number" min="0" max="200" id="number"placeholder="Length" required>
-
-            <label for="comments">Do you have any additional comments?</label>
+            </div>
+            <div id="hyp-test">
+            <label id= hyp-test-label for="yes_no">Do you think the hypothesis makes sense?</label>
+            <input type="radio" name="yes_no" checked>Yes</input>
+            <input type="radio" name="yes_no">No</input>
+            </div>
+            <div id="comments-section">
+            <label id="comments-label"for="comments">Do you have any additional comments?</label>
+            <br />
             <textarea name="comments" id="comments" cols="30" rows="10">I think that...</textarea>
+            </div>
             <input id="Submit" type="submit" value="Submit">
         </form>
     </main>
